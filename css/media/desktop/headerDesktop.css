@@ -1,0 +1,61 @@
+.header{
+	width: 100%;
+	height: auto;
+	background-color: #3b3b3b;
+	position: relative;
+.headerTitle{
+	text-align: center;
+	color: whitesmoke;
+	font-family: cursive;
+	padding: 10px 0;
+	box-sizing: border-box;
+	transition: 300ms;
+	&:hover{
+		text-shadow: 0 0 5px rgb(135, 133, 133);
+		color: #7b7b7b;
+	}
+}
+.headerMenuDesktop{
+	width: 100%;
+	height: 55px;
+	background-color: #2b2b2b;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	box-sizing: border-box;
+	.headerMenuDesktopDiv{
+		width: fit-content;
+		height: 100%;
+		padding: 0 10px;
+		box-sizing: border-box;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		transition: 300ms;
+		.headerMenuDesktopLink{
+			color: rgb(179, 175, 175);
+			text-decoration: none;
+			text-transform: capitalize;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			font-size: 18px;
+		}
+		&:hover{
+			background-color: rgb(154, 144, 144);
+
+		}
+		&:hover .headerMenuDesktopLink{
+			color: #2b2b2b;
+		}
+	}
+}
+.headerMenuMobile{
+	display: none;
+}
+[for="open"]{
+	display: none;
+}
+[type ="radio"]{
+	display: none;
+}
+}

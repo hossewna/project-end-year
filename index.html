@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- #region  start project-->
     <div class="wraper">
       <!-- #region  header-->
-      
+
       <header class="header">
         <h1 class="headerTitle">this is our website</h1>
         <!-- #region  menu desktop-->
@@ -57,40 +57,77 @@
       <!-- #endregion -->
       <!-- #region  baner-->
       <div class="banerDesktop">
-       <div class="banerDesktop-product">
-        <h1>this is labtop</h1>
-        <figure class="">
-          <img src="./images/Surface.png"  class="banerDesktop-image" alt="">
-          <figcaption>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nemo in odit quis! Tempora officiis commodi, enim ut ipsa magnam at, deleniti nisi et odit vitae 
-          </figcaption>
-        </figure>
-       </div>
-       <div class="banerDesktop-product">
-        <h1>this is labtop</h1>
-        <figure class="">
-          <img src="./images/Surface.png"  class="banerDesktop-image" alt="">
-          <figcaption>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nemo in odit quis! Tempora officiis commodi, enim ut ipsa magnam at, deleniti nisi et odit vitae 
-          </figcaption>
-        </figure>
-       </div>
-       <div class="banerDesktop-product">
-        <h1>this is labtop</h1>
-        <figure class="">
-          <img src="./images/Surface.png"  class="banerDesktop-image" alt="">
-          <figcaption>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nemo in odit quis! Tempora officiis commodi, enim ut ipsa magnam at, deleniti nisi et odit vitae 
-          </figcaption>
-        </figure>
-       </div>
-       
+        <div class="banerDesktop-product">
+          <h1>this is labtop</h1>
+          <figure class="">
+            <img src="./images/Surface.png" class="banerDesktop-image" alt="" />
+            <figcaption>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur nemo in odit quis! Tempora officiis commodi, enim ut
+              ipsa magnam at, deleniti nisi et odit vitae
+            </figcaption>
+          </figure>
+        </div>
+        <div class="banerDesktop-product">
+          <h1>this is labtop</h1>
+          <figure class="">
+            <img src="./images/Surface.png" class="banerDesktop-image" alt="" />
+            <figcaption>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur nemo in odit quis! Tempora officiis commodi, enim ut
+              ipsa magnam at, deleniti nisi et odit vitae
+            </figcaption>
+          </figure>
+        </div>
+        <div class="banerDesktop-product">
+          <h1>this is labtop</h1>
+          <figure class="">
+            <img src="./images/Surface.png" class="banerDesktop-image" alt="" />
+            <figcaption>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur nemo in odit quis! Tempora officiis commodi, enim ut
+              ipsa magnam at, deleniti nisi et odit vitae
+            </figcaption>
+          </figure>
+        </div>
       </div>
-       <!-- #endregion baner -->
+      <!-- #endregion baner -->
+       <!-- #region slider-->
+        <div class="slide">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/allen.png"  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/king.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/ball.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/war-games.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <!-- #endregion -->
+         <footer class="footer">
+          <h1>design by hossewn &copy; 2025</h1>
+         </footer>
     </div>
 
     <!-- #endregion -->
-
-
+     <script src="./swiper/swiper-bundle.min.js"></script>
+     <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

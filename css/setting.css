@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .wraper{width: 100%;}
-body{
+html,body{
     background-color: #3b3b3b;
+    scroll-behavior: smooth;
 }

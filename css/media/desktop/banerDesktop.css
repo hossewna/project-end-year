@@ -2,15 +2,14 @@
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #3b3b3b;
     .banerDesktop-product{
-
-        width: 32%;
+     width: 27%;
       height: 100%;
       display: flex;
       flex-flow: column wrap;
-      gap: 10px;
+      gap: 5px;
       align-items:center;
       h1{
         text-transform: capitalize;
@@ -23,7 +22,7 @@
             align-items: center;
             gap: 10px;
             .banerDesktop-image{
-                width: 70% !important;
+                width: 90% !important;
                 border-radius: 10px;
             }
             figcaption{
@@ -32,8 +31,17 @@
                 display: -webkit-box ;
                 -webkit-line-clamp:  3;
                 -webkit-box-orient: vertical ;  
-                overflow: hidden;                  
+                overflow: hidden; 
+                color: #9b9b9b;                 
             }
+        }
+        a{
+            padding: 7px;
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(202, 202, 202);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
         }
     }
 }
